@@ -1,0 +1,17 @@
+{
+"arrowback": "Back",
+  "firstName": "First Name",
+  "LName": "Last Name",
+  "Pno": "Phone number",
+  "signB": "sign up",
+  "checkAccount": "Already have an account? ",
+  "checksign": "Sign in",
+  "validatorMassage": "Enter your first name please!",
+  "validatorMassage2": "Enter your Last name please!",
+  "validatorMassage3": "Enter your phone number please!",
+  "skibB": "skip",
+  "welcomemessage": "Welcome Shabeer",
+  "text1":"you're all set",
+  "text2": "Take a minute to upload a profile photo"
+
+}

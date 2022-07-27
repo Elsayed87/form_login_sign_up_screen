@@ -1,0 +1,16 @@
+{
+  "arrowback": "رجوع",
+  "firstName": "الاسم الاول",
+  "LName": " الاسم الاخير",
+  "Pno": "رقم الهاتف",
+  "signB": "اشتراك",
+  "checkAccount": "هل لديك حساب؟",
+  "checksign": "تسجيل دخول",
+  "validatorMassage": "أدخل الاسم الاول من فضلك",
+  "validatorMassage2": "أدخل الاسم الاخير من فضلك",
+  "validatorMassage3": "أدخل رقم الهاتف من فضلك",
+  "skibB": "تخطي",
+  "welcomemessage": "مرحبا شبير",
+  "text1":"انت جاهز تماما",
+  "text2": "خذ دقيقة لتحميل صورة الملف الشخصي"
+}

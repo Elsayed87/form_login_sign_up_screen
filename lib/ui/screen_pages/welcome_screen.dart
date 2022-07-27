@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../const/constants.dart';
@@ -17,7 +18,7 @@ class WelcomeScreen extends StatelessWidget {
               Navigator.pop(context);
             },
             icon: Text(
-              'Skip',
+              "skibB".tr(),
               style: kTextBackIconTextStyle,
             ),
           ),
@@ -36,7 +37,7 @@ class WelcomeScreen extends StatelessWidget {
                 height: 20.h,
               ),
               Text(
-                'Welcome Shabeer',
+                "welcomemessage".tr(),
                 style: kTextwelcomeStyle,
               ),
               SizedBox(
@@ -49,11 +50,11 @@ class WelcomeScreen extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-              Text('you\'re all set', style: kTextwelcomeStyle2),
+              Text( "text1".tr(), style: kTextwelcomeStyle2),
               SizedBox(
                 height: 20.h,
               ),
-              Text('Take a minute to upload a profile photo',
+              Text("text2".tr(),
                   style: kTextwelcomeStyle3),
             ],
           ),

@@ -11,7 +11,7 @@ final kTextBackIconTextStyle=TextStyle(
     backgroundColor: Color(0xfffafafa),
     color: Colors.red,
     fontWeight: FontWeight.bold,
-    fontSize: 15.sp,
+    fontSize: 14.sp,
 );
 final kTextwelcomeStyle=TextStyle(
     color: Colors.black54,

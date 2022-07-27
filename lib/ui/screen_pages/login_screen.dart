@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,7 +27,7 @@ class _LoginState extends State<Login> {
         leading: IconButton(
           onPressed: () {},
           icon: Text(
-            'Back',
+            "arrowback".tr().toString(),
             style: kTextBackIconTextStyle,
           ),
         ),
@@ -41,24 +42,24 @@ class _LoginState extends State<Login> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Image.asset('images/sign_in.jpg'),
-                const ReuseTextFormField(
-                  labelText: 'First Name',
-                  validatorMassage: 'Enter your first name please!',
+                ReuseTextFormField(
+                  labelText: "firstName".tr().toString(),
+                  validatorMassage: "validatorMassage".tr(),
                   keyboardtype: TextInputType.name,
                 ),
                 SizedBox(
                   height: 20.h,
                 ),
-                const ReuseTextFormField(
-                    labelText: 'Last Name',
-                    validatorMassage: 'Enter your Last name please!',
+                ReuseTextFormField(
+                    labelText: "LName".tr().toString(),
+                    validatorMassage: "validatorMassage2".tr(),
                     keyboardtype: TextInputType.name),
                 SizedBox(
                   height: 20.h,
                 ),
-                const ReuseTextFormField(
-                    labelText: 'Phone number',
-                    validatorMassage: 'Enter your phone number please!',
+                ReuseTextFormField(
+                    labelText: "Pno".tr().toString(),
+                    validatorMassage:"validatorMassage3".tr(),
                     keyboardtype: TextInputType.number),
                 SizedBox(
                   height: 20.h,
@@ -67,18 +68,18 @@ class _LoginState extends State<Login> {
                   width: double.infinity,
                   child: ButtonDecorated(
                     formKey: _formKey,
-                    buttonLabelText: 'Sign Up',
+                    buttonLabelText: "signB".tr().toString(),
                     textMessageAfterValidate:
                         'You have been successfully registered',
                   ),
                 ),
                 Text.rich(
                   TextSpan(
-                    text: 'Already have an account ? ',
+                    text: "checkAccount".tr(),
                     style: kTextStartBeforeSpan,
                     children: <InlineSpan>[
                       TextSpan(
-                        text: 'Sign in',
+                        text: "checksign".tr().toString(),
                         style: kTextSpanStyle,
                         recognizer: TapGestureRecognizer()
                           ..onTap = () {
@@ -93,7 +94,21 @@ class _LoginState extends State<Login> {
                       )
                     ],
                   ),
-                )
+                ),
+                Row(
+                  children: [
+                    TextButton(
+                        onPressed: () {
+                          context.setLocale(const Locale('ar'));
+                        },
+                        child: const Text('العربيه')),
+                    TextButton(
+                        onPressed: () {
+                          context.setLocale(const Locale('en'));
+                        },
+                        child: const Text('English')),
+                  ],
+                ),
               ],
             ),
           ),
